@@ -1,0 +1,117 @@
+.container {
+  max-width: 1296px;
+  margin: 0 auto;
+}
+
+.header {
+  h1 {
+    font-size: 128px;
+    line-height: 192px;
+    letter-spacing: 15px;
+  }
+
+  img {
+    margin: 0 auto;
+  }
+
+  p {
+    text-align: right;
+    line-height: 192px;
+    font-size: 128px;
+    letter-spacing: 15px;
+  }
+}
+
+.self-intro {
+  background-color: #EFEFEF;
+  padding: 48px 0;
+
+  .container p {
+    margin-left: auto;
+    width: 636px;
+    font-size: 32px;
+    line-height: 48px;
+  }
+}
+
+.self-info {
+  width: 636px;
+  margin-right: auto;
+  padding-top: 80px;
+
+  .cell {
+
+    &:not(:last-of-type) {
+      margin-bottom: 40px;
+    }
+
+    h3 {
+      font-size: 40px;
+      line-height: 60px;
+      color: var(--font-color-danger);
+      border-bottom: 3px solid var(--font-color-danger);
+      margin-bottom: 16px;
+    }
+
+    a {
+      font-size: 24px;
+      line-height: 36px;
+      transition: all .5s ease-in-out;
+      background-size: 200% 100%;
+      background-image: linear-gradient(to right, #000, #000 50%, #f7b040 50%);
+      background-position: 0;
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+    }
+
+    a:hover {
+      background-position: -100%;
+    }
+
+    p {
+      font-size: 24px;
+      line-height: 36px;
+    }
+
+    &.self {
+      ul li:not(:last-of-type) {
+        margin-bottom: 8px;
+      }
+    }
+
+    &.education {
+
+      ul li:not(:last-of-type) {
+        margin-bottom: 16px;
+      }
+
+      .year-span {
+        font-size: 20px;
+        line-height: 30px;
+        font-style: italic;
+        color: #949494;
+      }
+    }
+
+    &.awards {
+      ul li:not(:last-of-type) {
+        margin-bottom: 12px;
+      }
+    }
+  }
+}
+
+footer {
+  margin-top: 160px;
+  padding: 64px 0;
+  background-color: #000;
+  text-align: center;
+
+  a:nth-of-type(2) {
+    margin: 0 40px;
+  }
+
+  img {
+    display: inline-block;
+  }
+}
